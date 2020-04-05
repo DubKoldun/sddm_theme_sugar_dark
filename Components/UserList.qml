@@ -101,7 +101,7 @@ Item {
 
             background: Rectangle {
                 radius: 10
-                color: root.palette.window
+                color: "#231d3c"
                 layer.enabled: true
                 layer.effect: DropShadow {
                     transparentBorder: true
