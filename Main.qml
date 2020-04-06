@@ -37,7 +37,7 @@ Pane {
     palette.highlight: config.AccentColor
     palette.text: config.MainColor
     palette.buttonText: config.MainColor
-    palette.window: "#231d3c"
+    palette.window: "#222b36" // "#231d3c" for amane
 
     font.family: config.Font
     font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
@@ -74,7 +74,7 @@ Pane {
             id: formBackground
             anchors.fill: form
             anchors.centerIn: form
-            color: "#231d3c"
+            color: "#222b36" // "#231d3c" for amane
             opacity: config.PartialBlur == "true" ? 0.3 : 1
             z: 1
         }
@@ -83,7 +83,7 @@ Pane {
             id: form
 
             height: virtualKeyboard.state == "visible" ? parent.height - virtualKeyboard.implicitHeight : parent.height
-            width: parent.width / 2.5
+            width: parent.width / 3   // change form size 2.5 prev
             anchors.horizontalCenter: config.FormPosition == "center" ? parent.horizontalCenter : undefined
             anchors.left: config.FormPosition == "left" ? parent.left : undefined
             anchors.right: config.FormPosition == "right" ? parent.right : undefined
