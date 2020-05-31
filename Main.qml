@@ -37,7 +37,7 @@ Pane {
     palette.highlight: config.AccentColor
     palette.text: config.MainColor
     palette.buttonText: config.MainColor
-    palette.window: "#222b36" // "#231d3c" for amane
+    palette.window: "#231d3c" // "#222b36" // "#231d3c" for amane
 
     font.family: config.Font
     font.pointSize: config.FontSize !== "" ? config.FontSize : parseInt(height / 80)
@@ -74,7 +74,7 @@ Pane {
             id: formBackground
             anchors.fill: form
             anchors.centerIn: form
-            color: "#222b36" // "#231d3c" for amane
+            color: "#231d3c" // "#222b36" alchemist // "#231d3c" for amane
             opacity: config.PartialBlur == "true" ? 0.3 : 1
             z: 1
         }
